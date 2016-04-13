@@ -73,13 +73,12 @@ png(filename = "plot4.png",width = 480, height = 480)
         
         ## plotting Global Active Power across the selected period (top right)
         plot(mydataset$DateTime, mydataset$Global_active_power, type = "l",
-                ylab = "Global Active Power", xlab = "datetime")
+                ylab = "Global Active Power", xlab = "")
         ## plotting Voltage across selected period (top left)
         plot(mydataset$DateTime, mydataset$Voltage, type = "l",
                 ylab = "Voltage", xlab = "datetime")
         ## plotting Sub_metering_1 (bottom right)
-        plot(mydataset$DateTime, mydataset$Sub_metering_1, type = "l", 
-             ylab = "Energy sub metering", xlab = "datetime")
+        plot(mydataset$DateTime, mydataset$Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "")
                 ## adding Sub_metering_2
                 points(mydataset$DateTime, mydataset$Sub_metering_2, type = "l", col = "red")
                 ## adding Sub_metering_3
@@ -91,7 +90,7 @@ png(filename = "plot4.png",width = 480, height = 480)
                 )
         ## plotting Global Reactive Power across the selected period
         plot(mydataset$DateTime, mydataset$Global_reactive_power, type = "l",
-                ylab = "Global Reactive Power", xlab = "datetime")
+                ylab = "Global_reactive_power", xlab = "datetime")
 
 dev.off()
 
