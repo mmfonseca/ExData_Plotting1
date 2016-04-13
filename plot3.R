@@ -66,7 +66,7 @@ setwd("/Users/mmfonseca/git/Coursera_Exploratory_Data_Analysis/ExData_Plotting1/
 ## A timeseries plot of the Energy sub metering across the defined period
 ## divided by sub metering
 
-## initiate png file to store plot2
+## initiate png file to store plot3
         ## I will start by plotting Sub_metering_1 first (wider range of values)
         ## so that the plot is the same as the example plot  
 png(filename = "plot3.png",width = 480, height = 480)
